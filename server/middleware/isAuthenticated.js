@@ -34,7 +34,7 @@ export const isAuthenticated = async (req, res, next) => {
     }
 
     // find user
-    const user = await user.findById(decoded.id);
+    const user = await User.findById(decoded.id);
 
     if (!user) {
       return res.status(404).json({
@@ -53,3 +53,5 @@ export const isAuthenticated = async (req, res, next) => {
     });
   }
 };
+
+export const
