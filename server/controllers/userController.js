@@ -304,7 +304,6 @@ export const forgotPassword = async (req, res) => {
 };
 
 
-
 // verify OTP
 
 export const verifyOTP = async (req, res) => {
@@ -366,7 +365,6 @@ export const verifyOTP = async (req, res) => {
     });
   }
 };
-
 
 
 // change password
@@ -435,3 +433,5 @@ export const allUsers = async (req, res) =>{
     });
   }
 } 
+
+// update user
